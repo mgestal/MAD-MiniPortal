@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<module name="nInjectConfiguration">
+
+  <bind service="Es.Udc.DotNet.MiniPortal.Model.UserProfileDao.IUserProfileDao, MiniPortal.Model"
+        to="Es.Udc.DotNet.MiniPortal.Model.UserProfileDao.UserProfileDaoEntityFramework, MiniPortal.Model" />
+
+  <bind 
+      service="Es.Udc.DotNet.MiniPortal.Model.UserService.IUserService, MiniPortal.Model"
+      to="Es.Udc.DotNet.MiniPortal.Model.UserService.UserService, MiniPortal.Model" />
+
+  <bind
+    service="System.Data.Entity.DbConnection, EntityFramework"
+    to="System.Data.Entity.DbConnection, EntityFramework" />
+
+    
+  <bind 
+      service="System.Data.Entity.DbContext, EntityFramework"
+      to="System.Data.Entity.DbContext, EntityFramework"
+      scope="singleton">
+          <metadata key="nameOrConnectionString" value="metadata=res://*/MiniPortal.Model.csdl|res://*/MiniPortal.Model.ssdl|res://*/MiniPortal.Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=localhost\SQLExpress;Initial Catalog=miniportal_test;Integrated Security=True;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient"    />
+  </bind>
+
+</module>
+

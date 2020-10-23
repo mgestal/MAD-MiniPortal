@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical" MembersFormat="NameAndType">
+  <Comment CommentText="E: Entity Type (e.g. UserProfile)&#xD;&#xA;PK : Primary Key Type (e.g. int, float...)">
+    <Position X="5.781" Y="1.188" Height="0.562" Width="2.294" />
+  </Comment>
+  <Comment CommentText="Context is common for al DAOS. It shared as singleton between all of them =&gt; All operations are performed over the same context (except short-term contexts)">
+    <Position X="5.798" Y="2.092" Height="0.865" Width="2.523" />
+  </Comment>
+  <Comment CommentText="DAO implements specific operations for the entity and re-uses the generic operations (Create, Find...)">
+    <Position X="6.06" Y="5.196" Height="0.896" Width="1.794" />
+  </Comment>
+  <Comment CommentText="Common Operations (CRUD)&#xD;&#xA;* Create&#xD;&#xA;* Find&#xD;&#xA;* Update&#xD;&#xA;* Remove&#xD;&#xA;&#xD;&#xA;Additional Operations&#xD;&#xA;&#xD;&#xA;* GetAllElements&#xD;&#xA;* Exists&#xD;&#xA;* Attach&#xD;&#xA;">
+    <Position X="1.122" Y="1.229" Height="2.219" Width="2.148" />
+  </Comment>
+  <Class Name="Es.Udc.DotNet.MiniPortal.Model.UserProfileDao.UserProfileDaoEntityFramework">
+    <Position X="3.25" Y="4.75" Width="3" />
+    <Members>
+      <Method Name="UserProfileDaoEntityFramework" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserProfileDao\UserProfileDaoEntityFramework.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Es.Udc.DotNet.ModelUtil.Dao.GenericDaoEntityFramework&lt;E, PK&gt;">
+    <Position X="3.5" Y="1.25" Width="2.5" />
+    <Members>
+      <Method Name="GenericDaoEntityFramework" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
